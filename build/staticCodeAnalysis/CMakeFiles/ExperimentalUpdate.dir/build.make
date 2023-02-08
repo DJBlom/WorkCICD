@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/odin/workspace/McuXpresso
+CMAKE_SOURCE_DIR = /home/odin/workspace/WorkCICD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/odin/workspace/McuXpresso/build/staticCodeAnalysis
+CMAKE_BINARY_DIR = /home/odin/workspace/WorkCICD/build/staticCodeAnalysis
 
 # Utility rule file for ExperimentalUpdate.
 
@@ -82,6 +82,6 @@ CMakeFiles/ExperimentalUpdate.dir/clean:
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/clean
 
 CMakeFiles/ExperimentalUpdate.dir/depend:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/odin/workspace/McuXpresso /home/odin/workspace/McuXpresso /home/odin/workspace/McuXpresso/build/staticCodeAnalysis /home/odin/workspace/McuXpresso/build/staticCodeAnalysis /home/odin/workspace/McuXpresso/build/staticCodeAnalysis/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/odin/workspace/WorkCICD /home/odin/workspace/WorkCICD /home/odin/workspace/WorkCICD/build/staticCodeAnalysis /home/odin/workspace/WorkCICD/build/staticCodeAnalysis /home/odin/workspace/WorkCICD/build/staticCodeAnalysis/CMakeFiles/ExperimentalUpdate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ExperimentalUpdate.dir/depend
 

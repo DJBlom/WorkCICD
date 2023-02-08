@@ -1,22 +1,32 @@
 [
 {
-  "directory": "/home/odin/workspace/McuXpresso/build/staticCodeAnalysis/source",
-  "command": "/usr/bin/cc  -I/home/odin/workspace/McuXpresso/source/OrionStaticAnalysis -I/home/odin/workspace/McuXpresso/source/PRIVATE -I/home/odin/workspace/McuXpresso/source/include -I/home/odin/workspace/McuXpresso/source/coreSystem/include -I/home/odin/workspace/McuXpresso/source -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj -c /home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystem.c",
-  "file": "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystem.c"
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/c++  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.obj -c /home/odin/workspace/WorkCICD/source/Orion.cpp",
+  "file": "/home/odin/workspace/WorkCICD/source/Orion.cpp"
 },
 {
-  "directory": "/home/odin/workspace/McuXpresso/build/staticCodeAnalysis/source",
-  "command": "/usr/bin/cc  -I/home/odin/workspace/McuXpresso/source/OrionStaticAnalysis -I/home/odin/workspace/McuXpresso/source/PRIVATE -I/home/odin/workspace/McuXpresso/source/include -I/home/odin/workspace/McuXpresso/source/coreSystem/include -I/home/odin/workspace/McuXpresso/source -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj -c /home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemConfiguration.c",
-  "file": "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemConfiguration.c"
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/cc  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.obj -c /home/odin/workspace/WorkCICD/source/src/Add.c",
+  "file": "/home/odin/workspace/WorkCICD/source/src/Add.c"
 },
 {
-  "directory": "/home/odin/workspace/McuXpresso/build/staticCodeAnalysis/source",
-  "command": "/usr/bin/cc  -I/home/odin/workspace/McuXpresso/source/OrionStaticAnalysis -I/home/odin/workspace/McuXpresso/source/PRIVATE -I/home/odin/workspace/McuXpresso/source/include -I/home/odin/workspace/McuXpresso/source/coreSystem/include -I/home/odin/workspace/McuXpresso/source -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj -c /home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemServices.c",
-  "file": "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemServices.c"
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/cc  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj -c /home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystem.c",
+  "file": "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystem.c"
 },
 {
-  "directory": "/home/odin/workspace/McuXpresso/build/staticCodeAnalysis/source",
-  "command": "/usr/bin/cc  -I/home/odin/workspace/McuXpresso/source/OrionStaticAnalysis -I/home/odin/workspace/McuXpresso/source/PRIVATE -I/home/odin/workspace/McuXpresso/source/include -I/home/odin/workspace/McuXpresso/source/coreSystem/include -I/home/odin/workspace/McuXpresso/source -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj -c /home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemWatchdog.c",
-  "file": "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemWatchdog.c"
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/cc  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj -c /home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemConfiguration.c",
+  "file": "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemConfiguration.c"
+},
+{
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/cc  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj -c /home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemServices.c",
+  "file": "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemServices.c"
+},
+{
+  "directory": "/home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source",
+  "command": "/usr/bin/cc  -I/home/odin/workspace/WorkCICD/source/include -I/home/odin/workspace/WorkCICD/source/coreSystem/include -I/home/odin/workspace/WorkCICD/source -I/home/odin/workspace/WorkCICD/devices/MIMXRT1062 -g -o CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj -c /home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemWatchdog.c",
+  "file": "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemWatchdog.c"
 }
 ]

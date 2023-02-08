@@ -1,0 +1,9 @@
+Reading tracefile coverage.info
+                               |Lines       |Functions  |Branches    
+Filename                       |Rate     Num|Rate    Num|Rate     Num
+=====================================================================
+[/home/odin/workspace/WorkCICD/test/]
+OrionTests.cpp                 | 100%      2| 100%     1|    -      0
+tests/template_test.cpp        | 100%      7| 100%     5|25.0%      4
+=====================================================================
+                         Total:| 100%      9| 100%     6|25.0%      4

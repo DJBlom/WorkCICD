@@ -2,6 +2,6 @@
 
 cd test
 make clean
-make -s -f Makefile EtnaUnitTests
-./EtnaUnitTests -c -v
+make -s -f Makefile OrionUnitTests
+./OrionUnitTests -c -v
 

@@ -8,10 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystem.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj.d"
-  "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemConfiguration.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj.d"
-  "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemServices.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj.d"
-  "/home/odin/workspace/McuXpresso/source/coreSystem/src/CoreSystemWatchdog.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystem.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemConfiguration.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemServices.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/coreSystem/src/CoreSystemWatchdog.c" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/src/Add.c" "source/CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.obj.d"
+  "/home/odin/workspace/WorkCICD/source/Orion.cpp" "source/CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.obj" "gcc" "source/CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.obj.d"
   )
 
 # Targets to which this target links.

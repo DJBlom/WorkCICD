@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Generic-gmake"
+	BuildStamp="20230208-1537-Experimental"
+	Name="fedora"
+	Generator="ctest-3.25.2"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="12.2.1"
+	OSName="Linux"
+	Hostname="fedora"
+	OSRelease="6.1.9-100.fc36.x86_64"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Thu Feb  2 03:27:13 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="142"
+	ProcessorCacheSize="3072"
+	NumberOfLogicalCPU="4"
+	NumberOfPhysicalCPU="2"
+	TotalVirtualMemory="13390"
+	TotalPhysicalMemory="6391"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="3100.12"
+	>
+	<Coverage>
+		<StartDateTime>Feb 08 10:37 EST</StartDateTime>
+		<StartTime>1675870677</StartTime>
+		<File Name="OrionTests.cpp" FullPath="./test/OrionTests.cpp" Covered="true">
+			<LOCTested>2</LOCTested>
+			<LOCUnTested>0</LOCUnTested>
+			<PercentCoverage>100.00</PercentCoverage>
+			<CoverageMetric>1.00</CoverageMetric>
+		</File>
+		<File Name="template_test.cpp" FullPath="./test/tests/template_test.cpp" Covered="true">
+			<LOCTested>7</LOCTested>
+			<LOCUnTested>0</LOCUnTested>
+			<PercentCoverage>100.00</PercentCoverage>
+			<CoverageMetric>1.00</CoverageMetric>
+		</File>
+		<LOCTested>9</LOCTested>
+		<LOCUntested>0</LOCUntested>
+		<LOC>9</LOC>
+		<PercentCoverage>100.00</PercentCoverage>
+		<EndDateTime>Feb 08 10:37 EST</EndDateTime>
+		<EndTime>1675870677</EndTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Coverage>
+</Site>

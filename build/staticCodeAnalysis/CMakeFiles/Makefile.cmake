@@ -7,14 +7,14 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/odin/workspace/McuXpresso/CMakeLists.txt"
+  "/home/odin/workspace/WorkCICD/CMakeLists.txt"
   "CMakeFiles/3.25.2/CMakeASMCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
-  "/home/odin/workspace/McuXpresso/cmakeModules/ProjectFiles.cmake"
-  "/home/odin/workspace/McuXpresso/cmakeModules/StaticCodeAnalysis.cmake"
-  "/home/odin/workspace/McuXpresso/source/CMakeLists.txt"
+  "/home/odin/workspace/WorkCICD/cmakeModules/ProjectFiles.cmake"
+  "/home/odin/workspace/WorkCICD/cmakeModules/StaticCodeAnalysis.cmake"
+  "/home/odin/workspace/WorkCICD/source/CMakeLists.txt"
   "/usr/share/cmake/Modules/CMakeASMInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"

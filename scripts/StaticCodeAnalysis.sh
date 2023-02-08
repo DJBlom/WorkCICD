@@ -1,9 +1,12 @@
 #!/bin/bash
 
-CMAKE=cmake
-BUILD_DIR=$(pwd)/build/staticCodeAnalysis
-TYPE=debug
+MAIN=source/Orion.cpp
+SOURCE_DIR=source/src 
+CORE_SOURCE_DIR=source/coreSystem/src
 
-
-$CMAKE -S . -B $BUILD_DIR -DBUILD_STATIC:TYPE=ON -DCMAKE_BUILD_TYPE=$TYPE -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
-$CMAKE --build $BUILD_DIR 
+if ! cppcheck --enable=all --std=c++11 --suppress=missingInclude --suppress=unusedFunction --error-exitcode=1 $SOURCE_DIR $CORE_SOURCE_DIR $MAIN;
+then
+    exit 1
+else
+    exit 0
+fi

@@ -1,0 +1,25 @@
+Performing coverage: 19807457306592
+* Run coverage for: /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir/tests
+  Command: /usr/bin/gcov -l -o /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir/tests /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir/tests/template_test.cpp.gcda
+  Output: File '/home/odin/workspace/WorkCICD/test/tests/template_test.cpp'
+Lines executed:100.00% of 7
+Creating 'template_test.cpp.gcda##template_test.cpp.gcov'
+
+Lines executed:100.00% of 7
+
+  Errors: 
+  produced in source dir: /home/odin/workspace/WorkCICD/test/tests/template_test.cpp
+* Run coverage for: /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir
+  Command: /usr/bin/gcov -l -o /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir /home/odin/workspace/WorkCICD/build/codeCoverage/test/CMakeFiles/CodeCoverage.dir/OrionTests.cpp.gcda
+  Output: File '/home/odin/workspace/WorkCICD/test/OrionTests.cpp'
+Lines executed:100.00% of 2
+Creating 'OrionTests.cpp.gcda##OrionTests.cpp.gcov'
+
+Lines executed:100.00% of 2
+
+  Errors: 
+  produced in source dir: /home/odin/workspace/WorkCICD/test/OrionTests.cpp
+	Covered LOC:         9
+	Not covered LOC:     0
+	Total LOC:           9
+	Percentage Coverage: 100.00%

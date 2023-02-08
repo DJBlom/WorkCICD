@@ -16,39 +16,39 @@
 
 
 # Convenient variable to hold the path to the project directory.
-PROJECT_DIR		:=$(realpath ../)
+PROJECT_DIR :=$(realpath ../)
 
 # Convenient variable to holdthe path to the test directory.
-TESTS_DIR		:=$(realpath .)
+TESTS_DIR :=$(realpath .)
 
 
 
 # Convenient variable to hold the test targets name.
-COMPONENT_NAME	:=    
+COMPONENT_NAME :=    
 
-TEST_TARGET		:=OrionTest
+TEST_TARGET := OrionUnitTests
 
 
 # Specify the compile to be used by the tests
-CPP_PLATFORM	:=
+CPP_PLATFORM :=
 
 # Specify the name of the source folders here, it can take more than one.
-SRC_DIRS		:=\
-				  $(PROJECT_DIR)/source/src
+SRC_DIRS :=\
+		   $(PROJECT_DIR)/source/src
 
 # Add all include directories here. Project includes and test includes.
-INCLUDE_DIRS	:=\
-				  $(CPPUTEST_HOME)/include\
-				  $(PROJECT_DIR)/source/include \
-				  $(TESTS_DIR)/mocks
+INCLUDE_DIRS :=\
+			   $(CPPUTEST_HOME)/include\
+			   $(PROJECT_DIR)/source/include \
+			   $(TESTS_DIR)/mocks
 
 
 # The location of all the test source files
-TEST_SRC_DIRS	:=\
-				  $(TESTS_DIR)\
-				  $(TESTS_DIR)/tests\
-				  $(TESTS_DIR)/mocks
+TEST_SRC_DIRS :=\
+				$(TESTS_DIR)\
+				$(TESTS_DIR)/tests\
+				$(TESTS_DIR)/mocks
 
 
-
+CPPUTEST_USE_EXTENSIONS := Y
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk

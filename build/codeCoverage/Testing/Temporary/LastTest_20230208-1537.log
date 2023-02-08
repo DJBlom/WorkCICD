@@ -1,0 +1,21 @@
+Start testing: Feb 08 10:37 EST
+----------------------------------------------------------
+1/1 Testing: CodeCoverage
+1/1 Test: CodeCoverage
+Command: "/home/odin/workspace/WorkCICD/build/codeCoverage/test/CodeCoverage"
+Directory: /home/odin/workspace/WorkCICD/build/codeCoverage/test
+"CodeCoverage" start time: Feb 08 10:37 EST
+Output:
+----------------------------------------------------------
+.
+OK (1 tests, 1 ran, 1 checks, 0 ignored, 0 filtered out, 0 ms)
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"CodeCoverage" end time: Feb 08 10:37 EST
+"CodeCoverage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Feb 08 10:37 EST

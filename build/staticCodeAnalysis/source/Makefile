@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/odin/workspace/McuXpresso
+CMAKE_SOURCE_DIR = /home/odin/workspace/WorkCICD
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/odin/workspace/McuXpresso/build/staticCodeAnalysis
+CMAKE_BINARY_DIR = /home/odin/workspace/WorkCICD/build/staticCodeAnalysis
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -97,14 +97,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(CMAKE_COMMAND) -E cmake_progress_start /home/odin/workspace/McuXpresso/build/staticCodeAnalysis/CMakeFiles /home/odin/workspace/McuXpresso/build/staticCodeAnalysis/source//CMakeFiles/progress.marks
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/odin/workspace/McuXpresso/build/staticCodeAnalysis/CMakeFiles 0
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(CMAKE_COMMAND) -E cmake_progress_start /home/odin/workspace/WorkCICD/build/staticCodeAnalysis/CMakeFiles /home/odin/workspace/WorkCICD/build/staticCodeAnalysis/source//CMakeFiles/progress.marks
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/odin/workspace/WorkCICD/build/staticCodeAnalysis/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/clean
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/clean
 .PHONY : clean
 
 # The main clean target
@@ -113,22 +113,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/preinstall
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/preinstall
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 source/CMakeFiles/OrionStaticAnalysis.dir/rule:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/CMakeFiles/OrionStaticAnalysis.dir/rule
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/CMakeFiles/OrionStaticAnalysis.dir/rule
 .PHONY : source/CMakeFiles/OrionStaticAnalysis.dir/rule
 
 # Convenience name for target.
@@ -137,15 +137,39 @@ OrionStaticAnalysis: source/CMakeFiles/OrionStaticAnalysis.dir/rule
 
 # fast build rule for target.
 OrionStaticAnalysis/fast:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/build
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/build
 .PHONY : OrionStaticAnalysis/fast
+
+Orion.obj: Orion.cpp.obj
+.PHONY : Orion.obj
+
+# target to build an object file
+Orion.cpp.obj:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.obj
+.PHONY : Orion.cpp.obj
+
+Orion.i: Orion.cpp.i
+.PHONY : Orion.i
+
+# target to preprocess a source file
+Orion.cpp.i:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.i
+.PHONY : Orion.cpp.i
+
+Orion.s: Orion.cpp.s
+.PHONY : Orion.s
+
+# target to generate assembly for a file
+Orion.cpp.s:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/Orion.cpp.s
+.PHONY : Orion.cpp.s
 
 coreSystem/src/CoreSystem.obj: coreSystem/src/CoreSystem.c.obj
 .PHONY : coreSystem/src/CoreSystem.obj
 
 # target to build an object file
 coreSystem/src/CoreSystem.c.obj:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj
 .PHONY : coreSystem/src/CoreSystem.c.obj
 
 coreSystem/src/CoreSystem.i: coreSystem/src/CoreSystem.c.i
@@ -153,7 +177,7 @@ coreSystem/src/CoreSystem.i: coreSystem/src/CoreSystem.c.i
 
 # target to preprocess a source file
 coreSystem/src/CoreSystem.c.i:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.i
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.i
 .PHONY : coreSystem/src/CoreSystem.c.i
 
 coreSystem/src/CoreSystem.s: coreSystem/src/CoreSystem.c.s
@@ -161,7 +185,7 @@ coreSystem/src/CoreSystem.s: coreSystem/src/CoreSystem.c.s
 
 # target to generate assembly for a file
 coreSystem/src/CoreSystem.c.s:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.s
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.s
 .PHONY : coreSystem/src/CoreSystem.c.s
 
 coreSystem/src/CoreSystemConfiguration.obj: coreSystem/src/CoreSystemConfiguration.c.obj
@@ -169,7 +193,7 @@ coreSystem/src/CoreSystemConfiguration.obj: coreSystem/src/CoreSystemConfigurati
 
 # target to build an object file
 coreSystem/src/CoreSystemConfiguration.c.obj:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj
 .PHONY : coreSystem/src/CoreSystemConfiguration.c.obj
 
 coreSystem/src/CoreSystemConfiguration.i: coreSystem/src/CoreSystemConfiguration.c.i
@@ -177,7 +201,7 @@ coreSystem/src/CoreSystemConfiguration.i: coreSystem/src/CoreSystemConfiguration
 
 # target to preprocess a source file
 coreSystem/src/CoreSystemConfiguration.c.i:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.i
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.i
 .PHONY : coreSystem/src/CoreSystemConfiguration.c.i
 
 coreSystem/src/CoreSystemConfiguration.s: coreSystem/src/CoreSystemConfiguration.c.s
@@ -185,7 +209,7 @@ coreSystem/src/CoreSystemConfiguration.s: coreSystem/src/CoreSystemConfiguration
 
 # target to generate assembly for a file
 coreSystem/src/CoreSystemConfiguration.c.s:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.s
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.s
 .PHONY : coreSystem/src/CoreSystemConfiguration.c.s
 
 coreSystem/src/CoreSystemServices.obj: coreSystem/src/CoreSystemServices.c.obj
@@ -193,7 +217,7 @@ coreSystem/src/CoreSystemServices.obj: coreSystem/src/CoreSystemServices.c.obj
 
 # target to build an object file
 coreSystem/src/CoreSystemServices.c.obj:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj
 .PHONY : coreSystem/src/CoreSystemServices.c.obj
 
 coreSystem/src/CoreSystemServices.i: coreSystem/src/CoreSystemServices.c.i
@@ -201,7 +225,7 @@ coreSystem/src/CoreSystemServices.i: coreSystem/src/CoreSystemServices.c.i
 
 # target to preprocess a source file
 coreSystem/src/CoreSystemServices.c.i:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.i
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.i
 .PHONY : coreSystem/src/CoreSystemServices.c.i
 
 coreSystem/src/CoreSystemServices.s: coreSystem/src/CoreSystemServices.c.s
@@ -209,7 +233,7 @@ coreSystem/src/CoreSystemServices.s: coreSystem/src/CoreSystemServices.c.s
 
 # target to generate assembly for a file
 coreSystem/src/CoreSystemServices.c.s:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.s
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.s
 .PHONY : coreSystem/src/CoreSystemServices.c.s
 
 coreSystem/src/CoreSystemWatchdog.obj: coreSystem/src/CoreSystemWatchdog.c.obj
@@ -217,7 +241,7 @@ coreSystem/src/CoreSystemWatchdog.obj: coreSystem/src/CoreSystemWatchdog.c.obj
 
 # target to build an object file
 coreSystem/src/CoreSystemWatchdog.c.obj:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj
 .PHONY : coreSystem/src/CoreSystemWatchdog.c.obj
 
 coreSystem/src/CoreSystemWatchdog.i: coreSystem/src/CoreSystemWatchdog.c.i
@@ -225,7 +249,7 @@ coreSystem/src/CoreSystemWatchdog.i: coreSystem/src/CoreSystemWatchdog.c.i
 
 # target to preprocess a source file
 coreSystem/src/CoreSystemWatchdog.c.i:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.i
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.i
 .PHONY : coreSystem/src/CoreSystemWatchdog.c.i
 
 coreSystem/src/CoreSystemWatchdog.s: coreSystem/src/CoreSystemWatchdog.c.s
@@ -233,8 +257,32 @@ coreSystem/src/CoreSystemWatchdog.s: coreSystem/src/CoreSystemWatchdog.c.s
 
 # target to generate assembly for a file
 coreSystem/src/CoreSystemWatchdog.c.s:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.s
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.s
 .PHONY : coreSystem/src/CoreSystemWatchdog.c.s
+
+src/Add.obj: src/Add.c.obj
+.PHONY : src/Add.obj
+
+# target to build an object file
+src/Add.c.obj:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.obj
+.PHONY : src/Add.c.obj
+
+src/Add.i: src/Add.c.i
+.PHONY : src/Add.i
+
+# target to preprocess a source file
+src/Add.c.i:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.i
+.PHONY : src/Add.c.i
+
+src/Add.s: src/Add.c.s
+.PHONY : src/Add.s
+
+# target to generate assembly for a file
+src/Add.c.s:
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/OrionStaticAnalysis.dir/build.make source/CMakeFiles/OrionStaticAnalysis.dir/src/Add.c.s
+.PHONY : src/Add.c.s
 
 # Help Target
 help:
@@ -246,6 +294,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... OrionStaticAnalysis"
+	@echo "... Orion.obj"
+	@echo "... Orion.i"
+	@echo "... Orion.s"
 	@echo "... coreSystem/src/CoreSystem.obj"
 	@echo "... coreSystem/src/CoreSystem.i"
 	@echo "... coreSystem/src/CoreSystem.s"
@@ -258,6 +309,9 @@ help:
 	@echo "... coreSystem/src/CoreSystemWatchdog.obj"
 	@echo "... coreSystem/src/CoreSystemWatchdog.i"
 	@echo "... coreSystem/src/CoreSystemWatchdog.s"
+	@echo "... src/Add.obj"
+	@echo "... src/Add.i"
+	@echo "... src/Add.s"
 .PHONY : help
 
 
@@ -269,6 +323,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/odin/workspace/McuXpresso/build/staticCodeAnalysis && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/odin/workspace/WorkCICD/build/staticCodeAnalysis && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

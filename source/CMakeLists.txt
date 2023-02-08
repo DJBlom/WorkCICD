@@ -3,23 +3,24 @@ include(ProjectFiles)
 
 if(CMAKE_TOOLCHAIN_FILE AND BUILD_ORION)
 
-
     add_executable(${MCUX_SDK_PROJECT_NAME} 
-        ${OrionMain}
+        ${${PROJECT_NAME}Main}
+        ${${PROJECT_NAME}SourceFiles}
         ${CoreSystemSourceFiles}
         ${SdkSourceFiles}
     )
 
     target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
+        ${${PROJECT_NAME}HeaderFiles}
         ${CoreSystemHeaderFiles}
         ${SdkHeaderFiles}
     )
 
+    # include modules
     include(flags)
 
     include(config)
 
-    # include modules
     include(driver_clock_MIMXRT1062)
 
     include(middleware_freertos-kernel_heap_4_MIMXRT1062)

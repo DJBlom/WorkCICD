@@ -22,6 +22,9 @@
 
 int main(void)
 {
+    char a[10];
+    a[10] = 0;
+
     /* Init board hardware. */
     BOARD_ConfigMPU();
     BOARD_InitBootPins();
