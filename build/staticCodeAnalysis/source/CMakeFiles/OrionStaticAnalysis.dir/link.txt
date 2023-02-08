@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystem.c.obj CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemConfiguration.c.obj CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemServices.c.obj CMakeFiles/OrionStaticAnalysis.dir/coreSystem/src/CoreSystemWatchdog.c.obj -o OrionStaticAnalysis 

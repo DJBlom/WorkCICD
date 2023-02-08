@@ -1,0 +1,9 @@
+#!/bin/bash
+
+CMAKE=cmake
+BUILD_DIR=$(pwd)/build/staticCodeAnalysis
+TYPE=debug
+
+
+$CMAKE -S . -B $BUILD_DIR -DBUILD_STATIC:TYPE=ON -DCMAKE_BUILD_TYPE=$TYPE -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+$CMAKE --build $BUILD_DIR 
