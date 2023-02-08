@@ -3,7 +3,7 @@ on:
   pull_request: null
   push:
     branches:
-    - feature/*
+    - main
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
