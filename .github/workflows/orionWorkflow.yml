@@ -1,0 +1,41 @@
+name: Orion CI CD
+on: 
+  pull_request: null
+  push:
+    branches:
+    - feature/*
+
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  
+jobs:
+  Build:
+    runs-on: ubuntu-latest
+    container: dawidblom/project:latest
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+    - name: Build
+      run: scripts/Build.sh   
+      
+  Test:
+    runs-on: ubuntu-latest
+    container: dawidblom/etna:latest       
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Static Code Analysis
+      run: scripts/StaticCodeAnalysis.sh
+
+    - name: Unit Tests
+      run: |
+        scripts/UnitTests.sh 
+      env:
+        CPPUTEST_HOME: ${{ vars.CPPUTEST_HOME }}
+
+    - name: Code Coverage
+      run: |
+        scripts/CodeCoverage.sh
+      env: 
+        CPPUTEST_HOME: ${{ vars.CPPUTEST_HOME }}
