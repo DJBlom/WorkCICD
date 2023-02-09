@@ -11,7 +11,7 @@ env:
 jobs:
   Build:
     runs-on: ubuntu-latest
-    container: dawidblom/project:latest
+    container: dawidblom/etan:latest
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
@@ -20,7 +20,7 @@ jobs:
       
   Test:
     runs-on: ubuntu-latest
-    container: dawidblom/etna:latest       
+    container: dawidblom/etan:latest      
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
