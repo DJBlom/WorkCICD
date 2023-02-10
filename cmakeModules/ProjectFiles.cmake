@@ -27,7 +27,7 @@ set(SdkHeaderFiles
 )
 
 set(${PROJECT_NAME}SourceFiles
-    #${CMAKE_SOURCE_DIR}/source/src/Add.c
+    ${CMAKE_SOURCE_DIR}/source/src/Add.c
 )
 
 set(${PROJECT_NAME}HeaderFiles

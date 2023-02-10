@@ -1,1 +1,0 @@
-/usr/bin/c++ -g -O0 -fprofile-arcs -ftest-coverage CMakeFiles/CodeCoverage.dir/OrionTests.cpp.obj CMakeFiles/CodeCoverage.dir/tests/template_test.cpp.obj -o CodeCoverage  -lgcov /opt/cpputest/lib/libCppUTest.a /opt/cpputest/lib/libCppUTestExt.a 
