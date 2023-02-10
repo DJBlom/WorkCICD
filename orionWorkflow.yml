@@ -3,11 +3,10 @@ on:
   pull_request: null
   push:
     branches:
-    - main
+    - feature/*
 
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  
   
 jobs:
   Build:
@@ -21,7 +20,7 @@ jobs:
       
   Test:
     runs-on: ubuntu-latest
-    container: dawidblom/project:latest    
+    container: dawidblom/etna:latest       
     steps:
     - name: Checkout Code
       uses: actions/checkout@v3
