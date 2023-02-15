@@ -12,18 +12,18 @@ set(CoreSystemSourceFiles
 
 set(CoreSystemHeaderFiles
     ${CMAKE_SOURCE_DIR}/source/coreSystem/include
-    ${CMAKE_SOURCE_DIR}/source
 )
 
 set(SdkSourceFiles
-    ${CMAKE_SOURCE_DIR}/devices/MIMXRT1062/project_template/board.c
-    ${CMAKE_SOURCE_DIR}/devices/MIMXRT1062/project_template/clock_config.c
-    ${CMAKE_SOURCE_DIR}/devices/MIMXRT1062/project_template/pin_mux.c
-    ${CMAKE_SOURCE_DIR}/devices/MIMXRT1062/project_template/dcd.c
+    ${CMAKE_SOURCE_DIR}/board/board.c
+    ${CMAKE_SOURCE_DIR}/board/clock_config.c
+    ${CMAKE_SOURCE_DIR}/board/dcd.c
+    ${CMAKE_SOURCE_DIR}/board/pin_mux.c
 )
 
 set(SdkHeaderFiles
-    ${CMAKE_SOURCE_DIR}/devices/MIMXRT1062/project_template/
+    ${CMAKE_SOURCE_DIR}/board
+    ${CMAKE_SOURCE_DIR}/source/coreSystem/include
 )
 
 set(${PROJECT_NAME}SourceFiles

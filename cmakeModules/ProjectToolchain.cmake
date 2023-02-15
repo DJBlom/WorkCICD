@@ -69,4 +69,3 @@ endif()
 if(DEFINED FPU_TYPE AND DEFINED FPU_ABI)
     set_floating_point(${FPU_TYPE} ${FPU_ABI})
 endif()
-

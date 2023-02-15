@@ -30,20 +30,20 @@ if (NOT DEFINED SdkRootDirPath)
     SET(SdkRootDirPath ${PROJECT_SOURCE_DIR})
 endif()
 # CURRENT DIRECTORY
-SET(ProjDirPath ${PROJECT_SOURCE_DIR}/source)
+SET(ProjDirPath ${PROJECT_SOURCE_DIR})
 
 set(CMAKE_MODULE_PATH
     ${SdkRootDirPath}/cmakeModules
-    ${SdkRootDirPath}/devices/MIMXRT1062/drivers
-    ${SdkRootDirPath}/rtos/freertos/freertos-kernel
-    ${SdkRootDirPath}/devices/MIMXRT1062
-    ${SdkRootDirPath}/devices/MIMXRT1062/utilities
-    ${SdkRootDirPath}/components/uart
-    ${SdkRootDirPath}/components/serial_manager
-    ${SdkRootDirPath}/components/lists
-    ${SdkRootDirPath}/devices/MIMXRT1062/xip
-    ${SdkRootDirPath}/boards/evkbmimxrt1060/xip
-    ${SdkRootDirPath}/CMSIS/Core/Include
+    ${SdkRootDirPath}/CMSIS
+    ${SdkRootDirPath}/component/uart
+    ${SdkRootDirPath}/component/serial_manager
+    ${SdkRootDirPath}/component/lists
+    ${SdkRootDirPath}/device
+    ${SdkRootDirPath}/drivers
+    ${SdkRootDirPath}/freertos/freertos-kernel
+    ${SdkRootDirPath}/startup
+    ${SdkRootDirPath}/utilities
+    ${SdkRootDirPath}/xip
 )
 
 

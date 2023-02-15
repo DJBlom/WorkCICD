@@ -21,9 +21,7 @@ function(CompileProject)
     )
 
     set(LINKER_SCRIPTS
-        ${PROJECT_SOURCE_DIR}/startup/${PROJECT_NAME}.ld
-        ${PROJECT_SOURCE_DIR}/startup/${PROJECT_NAME}Library.ld
-        ${PROJECT_SOURCE_DIR}/startup/${PROJECT_NAME}Memory.ld
+        ${PROJECT_SOURCE_DIR}/../MIMXRT1062/gcc/MIMXRT1062xxxxx_ram.ld
     )
 
     set_target_properties(${PROJECT_NAME} PROPERTIES 

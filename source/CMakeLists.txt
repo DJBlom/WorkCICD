@@ -3,16 +3,14 @@ include(ProjectFiles)
 
 if(CMAKE_TOOLCHAIN_FILE AND BUILD_ORION)
 
-    add_executable(${MCUX_SDK_PROJECT_NAME} 
-        ${${PROJECT_NAME}Main}
+    add_executable(${MCUX_SDK_PROJECT_NAME}
+	    ${${PROJECT_NAME}Main}
         ${${PROJECT_NAME}SourceFiles}
         ${CoreSystemSourceFiles}
         ${SdkSourceFiles}
     )
 
     target_include_directories(${MCUX_SDK_PROJECT_NAME} PUBLIC
-        ${${PROJECT_NAME}HeaderFiles}
-        ${CoreSystemHeaderFiles}
         ${SdkHeaderFiles}
     )
 
@@ -20,7 +18,7 @@ if(CMAKE_TOOLCHAIN_FILE AND BUILD_ORION)
     include(flags)
 
     include(config)
-
+    
     include(driver_clock_MIMXRT1062)
 
     include(middleware_freertos-kernel_heap_4_MIMXRT1062)
@@ -51,6 +49,8 @@ if(CMAKE_TOOLCHAIN_FILE AND BUILD_ORION)
 
     include(driver_xip_device_MIMXRT1062)
 
+    include(driver_xip_board_evkbmimxrt1060_MIMXRT1062)
+
     include(middleware_freertos-kernel_MIMXRT1062)
 
     include(middleware_freertos-kernel_extension_MIMXRT1062)
@@ -62,9 +62,9 @@ if(CMAKE_TOOLCHAIN_FILE AND BUILD_ORION)
     include(device_MIMXRT1062_system_MIMXRT1062)
 
 
-    IF(NOT DEFINED TARGET_LINK_SYSTEM_LIBRARIES)  
-        SET(TARGET_LINK_SYSTEM_LIBRARIES "-lm -lc -lgcc -lnosys")  
-    ENDIF()  
+    IF(NOT DEFINED TARGET_LINK_SYSTEM_LIBRARIES)
+    SET(TARGET_LINK_SYSTEM_LIBRARIES "-lm -lc -lgcc -lnosys")
+    ENDIF()
 
     TARGET_LINK_LIBRARIES(${MCUX_SDK_PROJECT_NAME} PRIVATE -Wl,--start-group)
 
